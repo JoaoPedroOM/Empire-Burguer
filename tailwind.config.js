@@ -12,7 +12,7 @@ export default {
         down: "slideDown 0.3s ease-in-out",
       },
       keyframes: {
-        slideUp: {
+        slideDown: {
           "0%": {
             transform: "translateY(100%)",
           },
@@ -20,7 +20,7 @@ export default {
             transform: "translateY(0)",
           },
         },
-        slideDown: {
+        slideUp: {
           "from": {
             transform: "translateY(0)",
           },
