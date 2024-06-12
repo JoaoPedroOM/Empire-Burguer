@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="font-lilita text-[#3b200b] text-[77px] lg:text-[53px] uppercase supm:leading-[1]">
           King <span className="text-[#f59a1b]">burger</span>
         </h1>
-        <p className="text-[22px] text-[#62493d] lg:text-[16px] mt-[-10px] mb-3 lg:mb-4 supm:mt-0">
+        <p className="text-[22px] text-[#62493d] lg:text-[16px] mt-[-10px] mb-[14px] lg:mb-4 supm:mt-0">
           Para quem tem um
           <span className="bg-[#f59a1b] px-2 py-[1px] text-[#60340c] rounded-md font-bold">
             Apetite de um REI!

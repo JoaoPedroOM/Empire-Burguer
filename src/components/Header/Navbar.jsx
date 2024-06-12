@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import logo from "../../assets/imgs/logo.png";
-import menuMobile from "../../assets/icons/bars-solid 2.svg";
 import whats from "../../assets/icons/whatsapp.svg";
 import ifood from "../../assets/icons/ifood.svg";
 import insta from "../../assets/icons/instagram.svg";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const navlinks = [
@@ -60,9 +58,7 @@ const Navbar = () => {
           className="bg-stone-950 bg-opacity-20 rounded-[3px] absolute right-4 top-4 cursor-pointer"
           onClick={() => setOpen(!open)}
         />
-        <h2 className="text-2xl p-4 font-lilita text-[#3b200b]">
-          King <span className="text-[#f59a1b]">burger</span>
-        </h2>
+        <img src={logo} alt="logo" className="w-[70%] p-4" />
         <nav>
           <ul className="flex flex-col p-4 text-gray-800">
             {navlinks.map((links) => (
