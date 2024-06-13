@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Timer from "../assets/icons/timer.svg";
+import useFetch from "../Hooks/useFetch";
+import { MENU_GET } from "../Api/api";
+import bannerMenu from "../assets/imgs/banner-menu.png";
+import bannerMobile from "../assets/imgs/banner-menu-mobile.4eba16a4.png";
 
 const Cardapio = () => {
+  const [menu, setMenu] = useState(null);
+  const { data, error, loading, request } = useFetch();
+
+  useEffect(() => {
+    const { url, options } = MENU_GET();
+    request(url, options);
+  }, [request]);
+
+  useEffect(() => {
+    if (data) setMenu(data);
+  }, [data]);
+
   return (
     <div>
       <section className="mx-auto max-w-[1240px] p-4 mt-16 mb-16 grid gap-8 grid-cols-2 items-center lg:grid-cols-1 lg:gap-16">
@@ -40,23 +56,65 @@ const Cardapio = () => {
         </div>
       </section>
 
-      <article id="cardapio">
-        <img />
-        <div className="bg-[#3B200B]">
-          <h2 className="text-[32px] font-lilita text-[#F59A1B] mb-4">
+      <article id="cardapio" className="grid grid-cols-2 lg:grid-cols-1">
+        <div className="relative flex items-center before:absolute before:h-full before:w-1 before:bg-[#B50B04] before:right-0 before:top-0 md:before:hidden">
+          <img
+            className="h-full object-cover block ms:hidden"
+            src={bannerMenu}
+            alt="Oferta Burger imperial mais batata por apenas 35,99"
+          />
+           <img
+            className="h-full object-cover hidden ms:block"
+            src={bannerMobile}
+            alt="Oferta Burger imperial mais batata por apenas 35,99"
+          />
+          <div className="absolute right-[100px] p-4 text-left lg:right-0 md:py-6">
+            <h2 className="text-[42px] font-lilita uppercase text-[#3B200B] leading-[1] lg:text-[25px]">
+              Escolha o seu combo
+              <br /> imperial,{" "}
+              <span className="bg-[#f59a1b] px-2 py-[1px] rounded-md">
+                peça agora!
+              </span>
+            </h2>
+            <p className="text-[16px] text-[#1D0605B0] mb-5 lg:text-[14px]">
+              Temos vários tipos de pratos para a nossa realeza, fique <br />{" "}
+              esperto porque temos sempre promoção!
+            </p>
+            <a
+              href="/"
+              className="px-5 py-[10px] text-white bg-[#f43127] font-bold rounded-md lg:text-[18px] hover:bg-red-700"
+            >
+              Ver Cardápio Completo
+            </a>
+          </div>
+        </div>
+        
+        <div className="bg-[#3B200B] col-span-1 py-[70px] pl-8 lg:p-0 lg:px-4 lg:pt-12">
+          <h2 className="text-[32px] font-lilita text-[#F59A1B] mb-4 md:leading-[1]">
             Cardápio imperial | Burger
           </h2>
-          <div className="mb-8">
-            <h3 className="text-[20px] font-lilita text-[#FAE4D0]">
-              Classic burger
-              .........................................................................
-              R$49,99
-            </h3>
-            <p className="text-[16px] text-white max-w-[470px] w-full leading-[1]">
-              Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
-              Tomate, Alface, Servidor do pão de batata
+          {error && alert("Erro ao consultar menu")}
+          {loading && (
+            <p className="text-[20px] font-lilita text-[#FAE4D0]">
+              Carregando menu...
             </p>
-          </div>
+          )}
+          {menu && (
+            <div>
+              {menu.map((prato) => (
+                <div className="mb-8" key={prato.plate}>
+                  <h3 className="text-[20px] font-lilita text-[#FAE4D0]">
+                    {prato.plate}
+                    .................
+                    {prato.price}
+                  </h3>
+                  <p className="text-[16px] text-white max-w-[470px] w-full leading-[1]">
+                    {prato.ingredients}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </article>
     </div>

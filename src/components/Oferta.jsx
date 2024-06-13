@@ -12,7 +12,7 @@ const Oferta = () => {
     <div className="relative grid grid-cols-3 md:grid-cols-1 items-center gap-[10px] mt-4 md:gap-[15px]">
 
     <div className="relative col-span-2 h-full md:col-span-1">
-      <div className="absolute h-full w-full pl-[17px] pt-[12px] text-gray-200">
+      <div className="absolute h-full w-full pl-[17px] pt-[12px]">
         <h3 className="text-[25px] font-lilita uppercase lg:text-[21px] sm:leading-[1]">Burger imperial+batata</h3>
         <p className="text-[18px] text-[#FFFFFFB0]">250kg</p>
       </div>
@@ -29,7 +29,7 @@ const Oferta = () => {
     <div className="col-span-1 flex flex-col h-full w-full md:col-span-1">
 
       <div className="relative mb-4 h-1/2 md:h-full">
-        <div className="absolute h-full w-full pl-[17px] pt-[12px] text-gray-200">
+        <div className="absolute h-full w-full pl-[17px] pt-[12px]">
           <h3 className="text-[25px] font-lilita uppercase text-[#1D0605E5] leading-[1]">batata</h3>
           <p className="text-[18px] font-semibold text-[#1D0605B0]">150kg</p>
         </div>
@@ -37,7 +37,7 @@ const Oferta = () => {
       </div>
 
       <div className="relative h-1/2 md:h-full">
-        <div className="absolute h-full w-full pl-[17px] pt-[12px] text-gray-200">
+        <div className="absolute h-full w-full pl-[17px] pt-[12px]">
           <h3 className="text-[25px] font-lilita uppercase text-[#1D0605E5] leading-[1]">Sorvete</h3>
           <p className="text-[18px] font-semibold text-[#1D0605B0]">50kg</p>
         </div>

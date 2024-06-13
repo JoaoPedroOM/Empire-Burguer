@@ -40,6 +40,7 @@ export default {
       lg: { max: "1024px" },
       md: { max: "768px" },
       sm: { max: "640px" },
+      ms: { max: "430px" },
       supm: { max: "359px" },
     },
   },
