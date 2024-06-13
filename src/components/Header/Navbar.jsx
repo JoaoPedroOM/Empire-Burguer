@@ -29,6 +29,8 @@ const Navbar = () => {
     },
   ];
 
+  const [selectedLink, setSelectedLink] = useState("")
+
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full h-16 bg-yellow-950 bg-opacity-5 backdrop-blur-md fixed z-50 flex justify-center items-center lg:px-[5px] lg:gap-[8px] lg:justify-between">
@@ -76,7 +78,7 @@ const Navbar = () => {
       <div className="lg:hidden block mx-[100px]">
         <ul className="flex gap-4 lg:flex-col lg:text-white justify-center items-center w-full py-4">
           {navlinks.map((links) => (
-            <li key={links.name}>
+            <li key={links.name} onClick={() => setSelectedLink(links.name)} className={`${selectedLink === links.name ? 'font-bold' : ''}`}>
               <a href={links.link}>{links.name}</a>
             </li>
           ))}

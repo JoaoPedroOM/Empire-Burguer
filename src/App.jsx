@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Oferta from "./components/Oferta"
+import Cardapio from './components/Cardapio'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Header/>
       <main>
         <Oferta/>
+        <Cardapio/>
       </main>
     </div>
   )
