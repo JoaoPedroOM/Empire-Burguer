@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Oferta from "./components/Oferta"
 import Cardapio from './components/Cardapio'
+import Feedbacks from './components/Feedbacks'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Oferta/>
         <Cardapio/>
       </main>
+      <Feedbacks/>
     </div>
   )
 }

@@ -12,3 +12,13 @@ export function MENU_GET() {
       },
     };
   }
+
+  export function COMENTARIOS_GET() {
+    return {
+      url: `${API_URL}/testimonials`,
+      options: {
+        method: "GET",
+        cache: 'no-store',
+      },
+    };
+  }
