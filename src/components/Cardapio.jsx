@@ -4,6 +4,8 @@ import useFetch from "../Hooks/useFetch";
 import { MENU_GET } from "../Api/api";
 import bannerMenu from "../assets/imgs/banner-menu.png";
 import bannerMobile from "../assets/imgs/banner-menu-mobile.4eba16a4.png";
+import formatCurrency from "../utils/formatCurrency";
+import cardWoman from "../assets/imgs/card-woman-eating.png"
 
 const Cardapio = () => {
   const [menu, setMenu] = useState(null);
@@ -56,7 +58,7 @@ const Cardapio = () => {
         </div>
       </section>
 
-      <article id="cardapio" className="grid grid-cols-2 lg:grid-cols-1">
+      <article id="cardapio" className="grid grid-cols-2 lg:grid-cols-1 mb-[70px] lg:mb-12">
         <div className="relative flex items-center before:absolute before:h-full before:w-1 before:bg-[#B50B04] before:right-0 before:top-0 md:before:hidden">
           <img
             className="h-full object-cover block ms:hidden"
@@ -71,7 +73,7 @@ const Cardapio = () => {
           <div className="absolute right-[100px] p-4 text-left lg:right-0 md:py-6">
             <h2 className="text-[42px] font-lilita uppercase text-[#3B200B] leading-[1] lg:text-[25px]">
               Escolha o seu combo
-              <br /> imperial,{" "}
+              <br /> imperial,
               <span className="bg-[#f59a1b] px-2 py-[1px] rounded-md">
                 peça agora!
               </span>
@@ -90,8 +92,11 @@ const Cardapio = () => {
         </div>
         
         <div className="bg-[#3B200B] col-span-1 py-[70px] pl-8 lg:p-0 lg:px-4 lg:pt-12">
-          <h2 className="text-[32px] font-lilita text-[#F59A1B] mb-4 md:leading-[1]">
+          <h2 className="text-[32px] font-lilita text-[#F59A1B] mb-4 md:leading-[1] uppercase sm:hidden">
             Cardápio imperial | Burger
+          </h2>
+            <h2 className="hidden text-[32px] font-lilita text-[#F59A1B] mb-4 md:leading-[1] uppercase sm:block">
+            Nossa especialidade
           </h2>
           {error && alert("Erro ao consultar menu")}
           {loading && (
@@ -106,7 +111,7 @@ const Cardapio = () => {
                   <h3 className="text-[20px] font-lilita text-[#FAE4D0]">
                     {prato.plate}
                     .................
-                    {prato.price}
+                    {formatCurrency(prato.price)}
                   </h3>
                   <p className="text-[16px] text-white max-w-[470px] w-full leading-[1]">
                     {prato.ingredients}
@@ -117,6 +122,25 @@ const Cardapio = () => {
           )}
         </div>
       </article>
+
+      {/* Imagem e atendimento */}
+      <div className="border-b border-[#1D060526] max-w-[1240px] pb-32 mx-auto flex items-center gap-5 mb-32 lg:flex-col lg:justify-center lg:gap-4 lg:pb-16 lg:mb-16 lg:p-4">
+          <div>
+            <img src={cardWoman} alt="Moça comendo um Hambúrguer e um balão de fala em sua cabeça com a frase 'Huum que gostoso!!!'"/>
+          </div>
+          <div className="max-w-[480px] mt-32 lg:mt-0">
+          <h2 className="text-[42px] font-lilita uppercase text-[#3B200B] leading-[1] lg:text-[25px] mb-[10px] lg:mb-[15px]">
+          Atendimento<br />
+              <span className="bg-[#f59a1b] px-2 py-[1px] rounded-md">
+              personalizado
+              </span>
+          </h2>
+            <p className="text-[20px] text-[#1D0605B0] mb-5 lg:mb-5 leading-[22px]">Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</p>
+            <a href="/" className="px-5 py-[10px] text-white bg-[#f43127] font-bold rounded-md lg:text-[18px] hover:bg-red-700">
+              Cardápio Imperial
+            </a>
+          </div>
+      </div>
     </div>
   );
 };
