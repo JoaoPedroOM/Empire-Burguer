@@ -1,12 +1,12 @@
 import React from "react";
 import insta from "../assets/imgs/InstagramImg.png";
 import cardPhone from "../assets/imgs/card-phone.png";
+import { BsDot } from "react-icons/bs";
+import Card from "../components/Card";
 import whats from "../assets/icons/whatsapp.svg";
 import delivery from "../assets/icons/delivery.svg";
 import iceCream from "../assets/icons/ice-cream.svg";
 import ifoodEntregas from "../assets/icons/ifoodEntregas.svg";
-import { BsDot } from "react-icons/bs";
-import Card from "../components/Card"
 
 const Instagram = () => {
   return (
@@ -49,13 +49,33 @@ const Instagram = () => {
             Nossas entregas
           </h2>
 
-          <Card img={whats} alt="Logo do whatsApp" title="WhatsApp" text="Vamos direto ao ponto, sem perder tempo!"/>
-          <Card img={delivery} alt="Logo do whatsApp" title="Entrega" text="Entregamos menos de 45 minutos na porta da sua casa!"/>
-          <Card img={iceCream} alt="Logo do whatsApp" title="Sobremesa" text="Pedidos assima de 100 reais, ganham brindes."/>
-          <Card img={ifoodEntregas} alt="Logo do whatsApp" title="iFood" text="Nossa loja é Top 1 da região!"/>
-          
+          <Card
+            img={whats}
+            alt="Logo do whatsApp"
+            title="WhatsApp"
+            text="Vamos direto ao ponto, sem perder tempo!"
+          />
+          <Card
+            img={delivery}
+            alt="Logo do whatsApp"
+            title="Entrega"
+            text="Entregamos menos de 45 minutos na porta da sua casa!"
+          />
+          <Card
+            img={iceCream}
+            alt="Logo do whatsApp"
+            title="Sobremesa"
+            text="Pedidos assima de 100 reais, ganham brindes."
+          />
+          <Card
+            img={ifoodEntregas}
+            alt="Logo do whatsApp"
+            title="iFood"
+            text="Nossa loja é Top 1 da região!"
+          />
         </div>
       </div>
+  
     </div>
   );
 };

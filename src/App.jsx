@@ -4,6 +4,7 @@ import Oferta from "./components/Oferta"
 import Cardapio from './components/Cardapio'
 import Feedbacks from './components/Feedbacks'
 import Instagram from './components/Instagram'
+import CardPedido from './components/CardPedido'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       </main>
       <Feedbacks/>
       <Instagram/>
+      <CardPedido/>
     </div>
   )
 }
