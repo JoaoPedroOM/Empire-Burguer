@@ -13,7 +13,7 @@ const Details = () => {
         </div>
 
         <div className='mb-2'>
-          <h2 className="text-[#331f1e] text-xl font-bold font-lilita uppercase">
+          <h2 className="text-[#5c4c4b] text-xl font-bold font-lilita uppercase">
             Artesanal
           </h2>
           <p className="w-44 text-[#1D0605B0] leading-tight flex">
@@ -30,7 +30,7 @@ const Details = () => {
         </div>
 
         <div className='mb-2'>
-          <h2 className="text-[#331f1e] text-xl font-bold font-lilita uppercase">
+          <h2 className="text-[#5c4c4b]  text-xl font-bold font-lilita uppercase">
             Atendimento
           </h2>
           <p className="w-44 text-[#1D0605B0] leading-tight flex">
@@ -47,7 +47,7 @@ const Details = () => {
         </div>
 
         <div className='mb-2'>
-          <h2 className="text-[#331f1e] text-xl font-bold font-lilita uppercase">
+          <h2 className="text-[#5c4c4b]  text-xl font-bold font-lilita uppercase">
             DELIVERY Speed
           </h2>
           <p className="w-44 text-[#1D0605B0] leading-tight flex">

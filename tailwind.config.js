@@ -42,6 +42,7 @@ export default {
     fontFamily: {
       lilita: ["Lilita One"],
       Lato: ["Lato"],
+      Inter: ["Inter"]
     },
     screens: {
       "2xl": { max: "1536px" },

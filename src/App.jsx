@@ -5,6 +5,8 @@ import Cardapio from './components/Cardapio'
 import Feedbacks from './components/Feedbacks'
 import Instagram from './components/Instagram'
 import CardPedido from './components/CardPedido'
+import Localizacao from './components/Localizacao'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Feedbacks/>
       <Instagram/>
       <CardPedido/>
+      <Localizacao/>
+      <Footer/>
     </div>
   )
 }

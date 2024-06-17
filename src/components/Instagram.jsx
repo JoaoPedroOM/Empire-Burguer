@@ -65,7 +65,7 @@ const Instagram = () => {
             img={iceCream}
             alt="Logo do whatsApp"
             title="Sobremesa"
-            text="Pedidos assima de 100 reais, ganham brindes."
+            text="Pedidos acima de 100 reais, ganham brindes."
           />
           <Card
             img={ifoodEntregas}

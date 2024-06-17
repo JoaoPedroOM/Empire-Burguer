@@ -5,7 +5,7 @@ import oferta3 from "../assets/imgs/oferta-3.png"
 
 const Oferta = () => {
   return (
-    <main className="mt-[90px] lg:mt-[64px] w-full max-w-[1240px] flex flex-col mx-auto items-start px-6" id='promocao'>
+    <div className="mt-[90px] lg:mt-[64px] w-full max-w-[1240px] flex flex-col mx-auto items-start px-6" id='promocao'>
     <h2 className='text-[#1D0605E5] text-[32px] font-lilita uppercase'>Ofertas especiais</h2>
     <p className='text-[16px]'>Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardapio.</p>
 
@@ -13,14 +13,14 @@ const Oferta = () => {
 
     <div className="relative col-span-2 h-full md:col-span-1">
       <div className="absolute h-full w-full pl-[17px] pt-[12px]">
-        <h3 className="text-[25px] font-lilita uppercase lg:text-[21px] sm:leading-[1]">Burger imperial+batata</h3>
+        <h3 className="text-[25px] font-lilita uppercase lg:text-[21px] sm:leading-[1] text-[#FFFFFFE5]">Burger imperial+batata</h3>
         <p className="text-[18px] text-[#FFFFFFB0]">250kg</p>
       </div>
       <img className="h-full object-cover" src={oferta1} alt="Oferta Burger imperial mais batata por apenas 35,99" />
 
       <div className="absolute bottom-0 right-0 flex h-full w-full flex-col items-end justify-end pb-[15px] pr-[50px] md:pr-[20px] md:pb-[5px]">
         <div className='flex flex-col items-center'>
-        <p className="text-[23px] leading-[1] text-[#FFFFFFB0] lg:[18px]">Apenas</p>
+        <p className="text-[23px] leading-[1] text-[#FFFFFFE5] lg:text-[15px]">Apenas</p>
         <h3 className="text-[42px] font-lilita uppercase lg:text-[23px] text-white">hoje</h3>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Oferta = () => {
       </div>
     </div>
   </div>
-    </main>
+    </div>
   )
 }
 

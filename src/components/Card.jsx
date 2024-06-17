@@ -2,8 +2,7 @@ import React from 'react'
 
 const Card = ({img, alt, title, text}) => {
   return (
-    <div className="transition-all duration-200 ease-in borde mb-2 md:px-2">
-    <div className="entregas__box">
+    <div className="entregas__box transition-all bg-red-500 duration-200 ease-in">
 
       <div className="box__icon">
         <img src={img} alt={alt} className="w-8 h-8" />
@@ -19,7 +18,6 @@ const Card = ({img, alt, title, text}) => {
       </div>
 
     </div>
-  </div>
   )
 }
 

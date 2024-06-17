@@ -48,11 +48,11 @@ const Cardapio = () => {
         </div>
 
         {/* Lado direito */}
-        <div>
+        <div className="lg:text-center">
           <p className="text-[#1D0605B0] text-[18px] leading-[1]">
             Não esqueça de marcar a gente no Instagram:
           </p>
-          <h2 className="text-[#F43127] text-[28px] font-lilita uppercase">
+          <h2 className="text-[#F43127] text-[28px] font-lilita uppercase lg:text-[30px]">
             #empireburger{" "}
           </h2>
         </div>
@@ -113,7 +113,7 @@ const Cardapio = () => {
                     .................
                     {formatCurrency(prato.price)}
                   </h3>
-                  <p className="text-[16px] text-white max-w-[470px] w-full leading-[1]">
+                  <p className="text-[16px] text-white max-w-[470px] w-full leading-[1] mt-[4px]">
                     {prato.ingredients}
                   </p>
                 </div>
