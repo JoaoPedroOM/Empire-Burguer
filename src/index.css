@@ -16,3 +16,36 @@ body{
 .quebra{
   word-spacing:100px;
 }
+
+.entregas__box {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.entregas__box:hover {
+  box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.5);
+  transform: scale(1.05);
+}
+
+.entregas__box:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.box__icon {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #FAE2CBE5;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+@media (max-width: 720px) {
+  .box__icon{
+    padding: 5px 7px;
+  }
+}

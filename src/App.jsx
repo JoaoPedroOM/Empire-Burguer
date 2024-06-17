@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Oferta from "./components/Oferta"
 import Cardapio from './components/Cardapio'
 import Feedbacks from './components/Feedbacks'
+import Instagram from './components/Instagram'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Cardapio/>
       </main>
       <Feedbacks/>
+      <Instagram/>
     </div>
   )
 }

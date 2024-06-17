@@ -10,6 +10,7 @@ export default {
       animation: {
         up: "slideUp 0.3s ease-in-out",
         down: "slideDown 0.3s ease-in-out",
+        loop: "marquee 10s linear infinite",
       },
       keyframes: {
         slideDown: {
@@ -27,6 +28,14 @@ export default {
           "to": {
             transform: "translateY(100%)",
           },
+        },
+        marquee:{
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(-100%)",
+          }
         },
       },
     },

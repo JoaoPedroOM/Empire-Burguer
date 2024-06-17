@@ -25,7 +25,7 @@ const Feedbacks = () => {
   }, [data]);
 
   return (
-    <article className="max-w-[1240px] mx-auto mb-36 p-4">
+    <article className="max-w-[1240px] mx-auto mb-36 md:mb-16 p-4" id="comentario">
       <div className="mb-4">
         <h2 className="text-[32px] text-[#1D0605E5] font-lilita uppercase">
           Nossa realeza
