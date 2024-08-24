@@ -135,7 +135,7 @@ const Cardapio = () => {
               personalizado
               </span>
           </h2>
-            <p className="text-[20px] text-[#1D0605B0] mb-5 lg:mb-5 leading-[22px]">Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</p>
+            <p className="text-[20px] text-[#1D0605B0] mb-5 lg:mb-5 leading-[22px]">Todos os nossos clientes são tratados como reis e rainhas, com a nossa culinária artesanal.</p>
             <a href="/" className="px-5 py-[10px] text-white bg-[#f43127] font-bold rounded-md lg:text-[18px] hover:bg-red-700">
               Cardápio Imperial
             </a>

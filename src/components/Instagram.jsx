@@ -16,8 +16,7 @@ const Instagram = () => {
           Publicações do instagram
         </h2>
         <p className="text-[16px] text-[#1D0605B0]">
-          Todos os nossos clientes são tratados como rei e rainha, com a nossa
-          colunaria artesanal.
+        Todos os nossos clientes são tratados como reis e rainhas, com a nossa culinária artesanal.
         </p>
       </div>
 
@@ -57,19 +56,19 @@ const Instagram = () => {
           />
           <Card
             img={delivery}
-            alt="Logo do whatsApp"
+            alt="Homem em uma moto desenho"
             title="Entrega"
-            text="Entregamos menos de 45 minutos na porta da sua casa!"
+            text="Entregamos em menos de 45 minutos na porta da sua casa!"
           />
           <Card
             img={iceCream}
-            alt="Logo do whatsApp"
+            alt="Sorvete logo"
             title="Sobremesa"
             text="Pedidos acima de 100 reais, ganham brindes."
           />
           <Card
             img={ifoodEntregas}
-            alt="Logo do whatsApp"
+            alt="Logo Ifood"
             title="iFood"
             text="Nossa loja é Top 1 da região!"
           />
